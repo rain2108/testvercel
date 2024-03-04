@@ -5,6 +5,7 @@ const pug = require('pug');
 const passport = require('passport');
 const { initializingPassport, isAuthenticated } = require('./passportConfig.js');
 const expressSession = require('express-session')
+require("dotenv").config();
 
 connectMongoose();
 
