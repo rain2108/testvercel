@@ -65,6 +65,8 @@ app.get('/logout', (req, res) => {
     res.send('logged out');
 });
 
-app.listen(4002, () => {
-    console.log('listening on 4002');
+const PORT = process.env.PORT;
+
+app.listen(PORT, () => {
+  console.log("Server is running on port " + PORT);
 });
